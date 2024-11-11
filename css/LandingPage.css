@@ -12,6 +12,8 @@
 .volunteer-section_title {
     color: var(--black_900_01) !important; 
     letter-spacing: -1.35px;
+    align-items: center;
+    text-align: center;
 }
 .section__button-1 {
     color: #ffffff !important;
@@ -352,36 +354,35 @@
 .section__vision {
     width: 100%;
     display: flex;
-    align-items: start;
+    align-items: center;
     @media only screen and (max-width: 1050px) { 
         flex-direction: column;
     }
 }
 .section__content {
-    padding-left: var(--space-3x1); padding-right: var(--space-3x1); gap: var(--space-4x1);
+    padding-left: var(--space-3x1);
+    padding-right: var(--space-3x1);
+    gap: var(--space-4x1);
     display: flex;
     flex: 1;
     flex-direction: column;
-    align-items: start;
-    @media only screen and (max-width: 1050px) {
-        align-self: stretch;
-        padding-left: var(--space-1g);
-        padding-right: var(--space-lg);
-    }
-    @media only screen and (max-width: 550px) {
-        gap: 31px;
-    }
+    align-items: center;
+    text-align: center;
+    justify-content: center; 
 }
 
 .section__content-description {
-    color: var(--black_900_01) !important; margin-left: 102px;
-    text-align: center; width: 64%;
+    color: var(--black_900_01) !important;
+    text-align: center;
+    width: 64%;
+    margin: 0 auto; 
     line-height: 100%;
-    @media only screen and (max-width: 1050px) {
-        width: 100%;
-        margin-left: 0px;
-    }
 }
+
+.volunteer-section__title {
+    text-align: center; 
+}
+
 .section__content-actions {
     margin-left: 60px;
     margin-right: 60px;
@@ -668,21 +669,26 @@
     gap: var(--space-3x1); display: flex;
     justify-content: center;
     align-items: start;
-    @media only screen and (max-width: 1050px) {
-        flex-direction: column;
-        padding-left: var(--space-1g); 
-        padding-right: var(--space-1g);
-    }
+
 }
 .volunteer-section__description {
     color: var(--black_900_01) !important; 
     margin-top: 26px;
-    margin-left: 44px;
+    padding-right: 20%;
     @media only screen and (max-width: 1050px) { 
         margin-left: 0px;
     }
 }
-    .volunteer-section__button {
+.volunteer-section__title {
+    color: var(--black_900_01) !important; 
+    letter-spacing: -1.35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.volunteer-section__button {
     color: #ffffff !important;
     margin-top: 210px;
     padding-left: 9px;
