@@ -8,6 +8,8 @@
     <link rel="stylesheet" type="text/css" href="./css/components.css">
     <link rel="stylesheet" type="text/css" href="./css/LandingPage.css">
     <link rel="stylesheet" type="text/css" href="./css/styles.css">
+    <script src="./js/AutoScroll.js"></script>
+    <script src="./js/header.js"></script>
 
 </head>
 
@@ -18,25 +20,25 @@
         <img src="public\fotos\img_header_logo.svg" alt="Header Logo" class="header__logo">
         <ul class="header__menu">
         <li>
-        <a href="#">
+        <a href="#equipo">
         <p class="header__menu-item2 ui text size-textxs">
         Equipo</p>
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="#vision">
         <p class="header__menu-item2 ui text size-textxs">
         Visión</p>
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="#mision">
         <p class="header__menu-item-2 ui text size-textxs">
         Misión</p>
         </a>
         </li>
         <li>
-        <a href="#">
+        <a href="#por-que-iniciar">
         <p class="header__menu-item2 ui text size-textxs">
         Aplica aquí</p>
         </a>
@@ -64,7 +66,7 @@
         </div>
         </div>
         </div>
-        <div class="panelimage">
+        <div class="panelimage" id="vision">
             <div class="section-2">
                 <div class="section__vision">
                     <img src="public\fotos\img_image.png" alt="Vision Image" class="section__image">
@@ -82,7 +84,7 @@
             </div>
         </div>
         <div>
-            <div class="panelimage-1">
+            <div class="panelimage-1" id="mision">
                 <div class="section-3">
                     <div class="section__mision">
                         <img src="public/fotos/img_image.png" alt="Decorative Image" class="section__image-1">
@@ -96,120 +98,58 @@
                 </div>
             </div>
         </div>
-        <div class="listheading">
-            <div class="section">
-                <div class="flex-col-center-center section__card-grid">
-                    <div class="section__column-heading">
-                        <h2 class="section__heading ui heading size-headingxs">
-                            Testimonios
-                        </h2>
-                        <div class="section__cards">
-                            <div class="section__testimonial">
-                                <h3 class="testimonial__quote ui heading size-headingxs">
-                                    “Quote”
-                                </h3>
-                                <div class="testimonial__author">
-                                    <img src="https://dhws-production.s3.ap-south-1.amazonaws.com/671d311de88de1001c96a71f/671d31ff921d420014273df6/671d31ff921d420014273dfb/appSource/images/img_shape.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQODH4IWPQLIXIJ64%2F20241026%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241026T182222Z&amp;X-Amz-Expires=25200&amp;X-Amz-Signature=84fa3c0155a58f2335e7635bf58335886dd45b9ceb571041fbc6dfbeed9aaa9a&amp;X-Amz-SignedHeaders=host" alt="Quote Image" class="author__image">
-                                    <div class="author__info">
-                                        <h4 class="info__title ui heading size-headingxs">
-                                            Title
-                                        </h4>
-                                        <p class="header__menu-item ui text size-textxs">
-                                            Description
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="section__testimonial--alternate">
-                                <h5 class="section__heading ui heading size-headingxs">
-                                    “Quote”
-                                </h5>
-                                <div class="testimonial__author">
-                                    <img src="https://dhws-production.s3.ap-south-1.amazonaws.com/671d311de88de1001c96a71f/671d31ff921d420014273df6/671d31ff921d420014273dfb/appSource/images/img_shape.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQODH4IWPQLIXIJ64%2F20241026%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241026T182222Z&amp;X-Amz-Expires=25200&amp;X-Amz-Signature=84fa3c0155a58f2335e7635bf58335886dd45b9ceb571041fbc6dfbeed9aaa9a&amp;X-Amz-SignedHeaders=host" alt="Avatar Image" class="author__image">
-                                    <div class="author__info">
-                                        <h6 class="info__title-1 ui heading size-headingxs">
-                                            Title
-                                        </h6>
-                                        <p class="info__description-1 ui text size-textxs">
-                                            Description
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="testimonial">
-                                <h4 class="testimonial__quote ui heading size-headingxs">
-                                    “Quote”
-                                </h4>
-                                <div class="testimonial__author">
-                                    <img src="https://dhws-production.s3.ap-south-1.amazonaws.com/671d311de88de1001c96a71f/671d31ff921d420014273df6/671d31ff921d420014273dfb/appSource/images/img_shape.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQODH4IWPQLIXIJ64%2F20241026%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241026T182222Z&amp;X-Amz-Expires=25200&amp;X-Amz-Signature=84fa3c0155a58f2335e7635bf58335886dd45b9ceb571041fbc6dfbeed9aaa9a&amp;X-Amz-SignedHeaders=host" alt="Title" class="author__image">
-                                    <div class="author__info">
-                                        <h6 class="info__title ui heading size-headingxs">
-                                            Title
-                                        </h6>
-                                        <p class="header__menu-item ui text size-textxs">
-                                            Description
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+        <div class="testimonials-container">
+            <h2 class="section__heading">Testimonios</h2>
+            <div class="testimonials-scroll">
+                <div class="testimonial-item">
+                    <p class="testimonial__quote">"Excelente trabajo, muy recomendado!"</p>
+                    <p class="testimonial__author">- Juan Pérez</p>
+                </div>
+                <div class="testimonial-item">
+                    <p class="testimonial__quote">"Profesionalismo y dedicación."</p>
+                    <p class="testimonial__author">- Ana López</p>
                 </div>
             </div>
         </div>
-        <div class="section-1">
-        <div class="flex-col-center-center section__card-grid">
-        <div class="section__column-heading">
-        <h4 class="section__heading ui heading size-headingxs">
-        Equipo</h4>
-        <div class="section__cards">
-        <div class="section__testimonial">
-        <h4 class="testimonial__quote ui heading size-headingxs">
-        “Quote”</h4>
-        <div class="testimonial__author">
-        <img src="https://dhws-production.s3.ap-south-1.amazonaws.com/671d311de88de1001c96a71f/671d31ff921d420014273df6/671d31ff921d420014273dfb/appSource/images/img_shape.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQODH4IWPQLIXIJ64%2F20241026%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241026T182222Z&amp;X-Amz-Expires=25200&amp;X-Amz-Signature=84fa3c0155a58f2335e7635bf58335886dd45b9ceb571041fbc6dfbeed9aaa9a&amp;X-Amz-SignedHeaders=host" alt="Quote Image" class="author__image">
-        <div class="author__info">
-        <h6 class="info__title ui heading size-headingxs">
-        Title</h6>
-        <p class="header__menu-item ui text size-textxs">
-        Description</p>
+        
+        <div class="team-container" id="equipo">
+            <h2 class="section__heading" >Equipo</h2>
+            <div class="team-scroll">
+                <div class="team-member">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" alt="Carlos García" class="team__image">
+                    <h4 class="team__name">Carlos García</h4>
+                    <p class="team__position">Desarrollador</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" alt="María Ruiz" class="team__image">
+                    <h4 class="team__name">María Ruiz</h4>
+                    <p class="team__position">Diseñadora</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" alt="Pedro López" class="team__image">
+                    <h4 class="team__name">Pedro López</h4>
+                    <p class="team__position">Gerente</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" alt="Laura Gómez" class="team__image">
+                    <h4 class="team__name">Laura Gómez</h4>
+                    <p class="team__position">Marketing</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" alt="Diego Fernández" class="team__image">
+                    <h4 class="team__name">Diego Fernández</h4>
+                    <p class="team__position">Ventas</p>
+                </div>
+                <div class="team-member">
+                    <img src="https://static.vecteezy.com/system/resources/previews/005/129/844/non_2x/profile-user-icon-isolated-on-white-background-eps10-free-vector.jpg" alt="Diego Fernández" class="team__image">
+                    <h4 class="team__name">Jose maria Zapata</h4>
+                    <p class="team__position">Ventas</p>
+                </div>
+            </div>
         </div>
-        </div>
-        </div>
-        <div class="section__testimonial--alternate">
-        <h4 class="section__heading ui heading size-headingxs">
-        “Quote”</h4>
-        <div class="testimonial__author">
-        <img src="https://dhws-production.s3.ap-south-1.amazonaws.com/671d311de88de1001c96a71f/671d31ff921d420014273df6/671d31ff921d420014273dfb/appSource/images/img_shape.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQODH4IWPQLIXIJ64%2F20241026%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241026T182222Z&amp;X-Amz-Expires=25200&amp;X-Amz-Signature=84fa3c0155a58f2335e7635bf58335886dd45b9ceb571041fbc6dfbeed9aaa9a&amp;X-Amz-SignedHeaders=host" alt="Avatar Image" class="author__image">
-        <div class="author__info">
-        <h6 class="info__title-1 ui heading size-headingxs">
-        Title</h6>
-        <p class="info__description-1 ui text size-textxs">
-        Description</p>
-        </div>
-        </div>
-        </div>
-        <div class="testimonial">
-        <h4 class="testimonial__quote ui heading size-headingxs">
-        “Quote”</h4>
-        <div class="testimonial__author">
-        <img src="https://dhws-production.s3.ap-south-1.amazonaws.com/671d311de88de1001c96a71f/671d31ff921d420014273df6/671d31ff921d420014273dfb/appSource/images/img_shape.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&amp;X-Amz-Credential=AKIAQODH4IWPQLIXIJ64%2F20241026%2Fap-south-1%2Fs3%2Faws4_request&amp;X-Amz-Date=20241026T182222Z&amp;X-Amz-Expires=25200&amp;X-Amz-Signature=84fa3c0155a58f2335e7635bf58335886dd45b9ceb571041fbc6dfbeed9aaa9a&amp;X-Amz-SignedHeaders=host" alt="Title" class="author__image">
-        <div class="author__info">
-        <h6 class="info__title ui heading size-headingxs">
-        Title</h6>
-        <p class="header__menu-item ui text size-textxs">
-        Description</p>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>  
-        </div>
+
         <div>
-            <div class="panelimage">
+            <div class="panelimage-3" id="por-que-iniciar">
                 <div class="section-2">
                 <div class="section__vision">
                 <img src="public\fotos\img_image.png" alt="Vision Image" class="section__image">
