@@ -211,7 +211,8 @@ html {
     display: none; 
 }
 .team-member {
-    min-width: 250px;  
+    position: relative;
+    min-width: 300px;  
     max-width: 300px;  
     min-height: 340px;  
     border-radius: 8px;
@@ -241,12 +242,19 @@ html {
     font-size: 26px;  
     font-weight: bold;
     margin-top: 20px;
+    white-space: nowrap;
+    overflow: hidden;
 }
 
 .team__position {
     font-size: 22px; 
-    margin-top: 20px;
+    margin-top: 63px;
 }
+.team__position1 {
+    font-size: 22px; 
+    margin-bottom: 80px;
+}
+
 
 
 .faq-section__icon--last {
