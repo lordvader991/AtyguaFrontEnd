@@ -1,16 +1,21 @@
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
+    console.log('Script cargado correctamente');
     const scrollContainer = document.querySelector('.team-scroll');
-    let scrollAmount = 0;
-    const scrollStep = 1; 
+    const scrollSpeed = 2; 
 
     function autoScroll() {
-        scrollAmount += scrollStep;
-        if (scrollAmount >= scrollContainer.scrollWidth - scrollContainer.clientWidth) {
-            scrollAmount = 0;
+        scrollContainer.scrollLeft += scrollSpeed;
+        if (scrollContainer.scrollLeft >= scrollContainer.scrollWidth / 2) {
+            scrollContainer.scrollLeft = 0;
         }
-        scrollContainer.scrollLeft = scrollAmount;
+
         requestAnimationFrame(autoScroll);
     }
+    const children = [...scrollContainer.children];
+    children.forEach(child => {
+        const clone = child.cloneNode(true);
+        scrollContainer.appendChild(clone);
+    });
 
     autoScroll();
 });
