@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Script cargado correctamente');
     const scrollContainer = document.querySelector('.team-scroll');
-    const scrollSpeed = 2; 
+    const scrollSpeed =2; 
 
     function autoScroll() {
         scrollContainer.scrollLeft += scrollSpeed;

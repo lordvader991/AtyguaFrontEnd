@@ -196,6 +196,7 @@ html {
     align-items: center;
     width: 100%;  
     overflow: hidden; 
+    padding-bottom: 20px;
 }
 
 .team-scroll {
@@ -205,7 +206,7 @@ html {
     scrollbar-width: none;
     scroll-behavior: smooth;
     white-space: nowrap;
-    width: 800px;
+    width: 100%;
 }
 .team-scroll::-webkit-scrollbar {
     display: none; 
@@ -405,6 +406,16 @@ html {
     padding: 0;
     
 }
+.columnprice__title__slogan {
+    color: black !important; 
+    letter-spacing: -2.16px; 
+    font-size: 72px !important;
+    font-weight: 700 !important;
+    padding-bottom: 20px;
+    @media only screen and (max-width: 1050px) { 
+        font-size: 48px !important;
+    }
+}
 
 .columnprice__title {
     align-self: stretch; 
@@ -500,7 +511,6 @@ html {
 .section__content {
     padding-left: var(--space-3x1);
     padding-right: var(--space-3x1);
-    gap: var(--space-4x1);
     display: flex;
     flex: 1;
     flex-direction: column;
@@ -512,9 +522,10 @@ html {
 .section__content-description {
     color: var(--black_900_01) !important;
     text-align: center;
-    width: 64%;
-    margin: 0 auto; 
-    line-height: 100%;
+    width: 100%;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    
 }
 
 
@@ -560,10 +571,14 @@ html {
 .section__subtitle {
     color: var(--black_900_01) !important;
     text-align: center;
-    width: 64%;
+    width: 100%;
     margin: 0 auto; 
     line-height: 100%;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    
 }
+
 .section__actions {
     margin-top: 42px;
     padding-left: 16px;
@@ -774,9 +789,10 @@ html {
     }
 }
 .check-circle-1 {
-    height: 16px; margin-top: 2px;
-    margin-bottom: 2px;
+    height: 16px; 
     width: 16px;
+    margin-right: 5px;
+
 }
 
 .volunteer-section { 
@@ -788,7 +804,6 @@ html {
 }
 .volunteer-section__description {
     color: var(--black_900_01) !important; 
-    margin-top: 26px;
     padding-right: 20%;
     @media only screen and (max-width: 1050px) { 
         margin-left: 0px;
@@ -815,13 +830,13 @@ html {
 }
 
 .footer {
-    padding-top: 10px;
-    padding-bottom: 10px;
     display: flex;
     background-color: #6127ff;
     justify-content: center;
     align-items: end;
     border-top: 1px solid #6127ff;
+    width: 100%;
+    height: auto;
 }
 .footer__row { 
     margin-top: 34px; 
@@ -835,7 +850,6 @@ html {
     }
 }
 .footer__column {
-    gap: 30px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -866,4 +880,62 @@ html {
     color: #ffffff !important;
 }
 
+.footer__column-row__buttonlist__image--info {
+    height: 24px; 
+    width: 24px;  
+    object-fit: contain; 
+}
 
+
+
+.panelimage-1-slogan {
+    opacity: 0.8;
+    background-color: var(--white_a700_a2); 
+    display: flex;
+    justify-content: center;
+    padding-bottom: 80px;
+}
+.section-3-slogan {
+    margin-top: 18px;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    @media only screen and (max-width: 1050px) {
+        padding-left: var(--space-lg);
+        padding-right: var(--space-lg);
+    }
+}
+.section__slogan {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row-reverse;
+}
+.section__column-slogan {
+
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;  
+}
+.section__title-slogan {
+    color: var(--black_900_01) !important; 
+    letter-spacing: -1.35px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+.section__subtitle-slogan {
+    color: var(--black_900_01) !important;
+    text-align: center;
+    width: 100%;
+    line-height: 100%;
+    letter-spacing: 0.1em;
+    line-height: 1em;
+    padding-bottom: 30px;
+}
